@@ -231,6 +231,7 @@ spec:
         for file in ${PIPELINES_UPSERT}; do
           python ${file}
         done
+        
         cat /workspace/source/pipeline/load_documents_lc.yaml
         cat /workspace/source/pipeline/load_documents_li.yaml
         cat /workspace/source/pipeline/load_documents_mv.yaml
