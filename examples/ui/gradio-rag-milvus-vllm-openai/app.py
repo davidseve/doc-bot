@@ -17,7 +17,7 @@ from langchain_core.embeddings import Embeddings
 from langchain_core.retrievers import BaseRetriever
 from langchain.callbacks.base import BaseCallbackHandler
 from langchain.chains import RetrievalQA
-from langchain.embeddings.huggingface import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.llms import VLLMOpenAI
 from langchain.prompts import PromptTemplate
 from langchain_community.vectorstores import Milvus

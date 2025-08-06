@@ -1,4 +1,4 @@
-torch
+torch>=2.0.0
 einops
 gradio
 pymilvus
@@ -6,5 +6,7 @@ sentence-transformers
 text-generation
 python-dotenv
 langchain_community
+langchain-huggingface
 openai
 kubernetes
+safetensors>=0.4.0
