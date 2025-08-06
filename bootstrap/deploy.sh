@@ -90,7 +90,7 @@ spec:
           repoURL: "${REPO_URL}"
           name: "${DATA_SCIENCE_PROJECT_NAMESPACE}-chat"
           vcs:
-            uri: "https://github.com/alpha-hack-program/kb-chat.git"
+            uri: "https://github.com/davidseve/kb-chat.git"
             ref: "main"
             name: "alpha-hack-program/kb-chat"
             path: "kb-chat"
