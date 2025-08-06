@@ -1,0 +1,67 @@
+# ====================
+# CURSOR IGNORE CONFIG
+# ====================
+# Este archivo previene que archivos sensibles sean enviados a la IA
+
+# Archivos de credenciales y tokens
+*.token
+*.*token*
+*.*-creds
+*.key
+*.pem
+id_rsa*
+credentials.json
+secrets.json
+
+# Variables de entorno y configuración sensible
+.env*
+*.env
+**/.env*
+config.json
+settings.json
+
+# Certificados y secretos de Kubernetes/OpenShift
+*cert-bundle-secret*
+*.crt
+*.cert
+
+# Archivos temporales y de respaldo
+tmp/
+*.tmp
+*.bak
+*.old
+old/
+temp.*
+
+# Directorios de cache y dependencias
+__pycache__/
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+node_modules/
+.cache/
+
+# Archivos de desarrollo específicos
+.vscode/
+.DS_Store
+.jupyter/
+mlruns/
+
+# Logs y archivos de salida
+*.log
+logs/
+*.out
+
+.hf-creds
+
+# Modelos entrenados y datos pesados (opcional)
+# models/
+# data/large_datasets/
+# *.pkl
+# *.model
+
+# Documentos específicos del proyecto que no necesita ver la IA
+# examples/documents/
+# *.pdf

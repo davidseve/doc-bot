@@ -75,6 +75,7 @@ spec:
     helm:
       values: |
         argocdNamespace: "${ARGOCD_NAMESPACE}"
+        uri: "${REPO_URL}"
         instanceName: "vllm-mistral-7b"
         dataScienceProjectDisplayName: "Project ${DATA_SCIENCE_PROJECT_NAMESPACE}"
         dataScienceProjectNamespace: "${DATA_SCIENCE_PROJECT_NAMESPACE}"
@@ -86,6 +87,7 @@ spec:
           port: 19530
           host: "vectordb-milvus.milvus.svc.cluster.local"
         chatApplication:
+          repoURL: "${REPO_URL}"
           name: "${DATA_SCIENCE_PROJECT_NAMESPACE}-chat"
           vcs:
             uri: "https://github.com/alpha-hack-program/kb-chat.git"
@@ -95,6 +97,7 @@ spec:
           language: "${CHAT_APPLICATION_LANGUAGE}"
         pipelinesApplication:
           name: "${DATA_SCIENCE_PROJECT_NAMESPACE}-pipelines"
+          repoURL: "${REPO_URL}"
         modelApplication:
           name: "${DATA_SCIENCE_PROJECT_NAMESPACE}-model"
           repoURL: "${MODEL_SERVING_REPO_URL:-https://github.com/alpha-hack-program/model-serving-utils.git}"

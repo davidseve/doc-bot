@@ -1,0 +1,75 @@
+# ===============================
+# CURSOR INDEXING IGNORE CONFIG
+# ===============================
+# Archivos excluidos solo de indexación (para performance)
+# La IA aún puede acceder a estos archivos si se referencian explícitamente
+
+# Archivos generados y de build
+dist/
+build/
+target/
+*.compiled
+
+# Archivos de documentación grandes
+*.pdf
+*.doc
+*.docx
+*.xlsx
+*.ppt
+*.pptx
+
+# Imágenes y multimedia
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.mp4
+*.avi
+*.mov
+images/
+img/
+assets/
+
+# Datasets y archivos de datos grandes
+*.csv
+*.parquet
+*.h5
+*.hdf5
+data/
+datasets/
+
+# Modelos y checkpoints de ML
+*.pkl
+*.model
+*.ckpt
+*.safetensors
+models/
+checkpoints/
+
+# Archivos de configuración de contenedores
+*.tar
+*.gz
+*.zip
+Containerfile
+Dockerfile*
+
+# Manifiestos de Kubernetes/OpenShift (ya configurados)
+*.yaml
+*.yml
+# Excepto los importantes del proyecto
+!*.yaml
+!*.yml
+# Pero mantener ignorados los manifiestos grandes
+templates/*.yaml
+manifests/*.yaml
+
+# Lock files y dependencias
+package-lock.json
+yarn.lock
+Pipfile.lock
+poetry.lock
+requirements*.txt
+
+# Jupyter notebooks con outputs pesados
+*.ipynb
