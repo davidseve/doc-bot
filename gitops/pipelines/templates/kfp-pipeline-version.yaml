@@ -39,7 +39,7 @@ spec:
           container:
             args:
             - --executor_input
-            - '{{$}}'
+            - '{{`{{$}}`}}'
             - --function_to_execute
             - add_chunks_to_milvus
             command:
@@ -102,7 +102,7 @@ spec:
           container:
             args:
             - --executor_input
-            - '{{$}}'
+            - '{{`{{$}}`}}'
             - --function_to_execute
             - get_chunks_from_documents
             command:
