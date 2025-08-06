@@ -28,6 +28,7 @@ spec:
     deploy: true
     enableSamplePipeline: false
     enableOauth: true
+    pipelineStorage: kubernetes
   database:
     disableHealthCheck: false
     mariaDB:
