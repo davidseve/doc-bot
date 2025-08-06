@@ -202,40 +202,40 @@ spec:
             parameterType: STRING
     schemaVersion: 2.1.0
     sdkVersion: kfp-2.13.0
-    ---
-    platforms:
-      kubernetes:
-        deploymentSpec:
-          executors:
-            exec-add-chunks-to-milvus:
-              secretAsEnv:
-              - keyToEnv:
-                - envVar: MILVUS_HOST
-                  secretKey: MILVUS_HOST
-                - envVar: MILVUS_PORT
-                  secretKey: MILVUS_PORT
-                - envVar: MILVUS_USERNAME
-                  secretKey: MILVUS_USERNAME
-                - envVar: MILVUS_PASSWORD
-                  secretKey: MILVUS_PASSWORD
-                secretName: milvus-connection-documents
-                secretNameParameter:
-                  runtimeValue:
-                    constant: milvus-connection-documents
-            exec-get-chunks-from-documents:
-              secretAsEnv:
-              - keyToEnv:
-                - envVar: AWS_ACCESS_KEY_ID
-                  secretKey: AWS_ACCESS_KEY_ID
-                - envVar: AWS_SECRET_ACCESS_KEY
-                  secretKey: AWS_SECRET_ACCESS_KEY
-                - envVar: AWS_DEFAULT_REGION
-                  secretKey: AWS_DEFAULT_REGION
-                - envVar: AWS_S3_BUCKET
-                  secretKey: AWS_S3_BUCKET
-                - envVar: AWS_S3_ENDPOINT
-                  secretKey: AWS_S3_ENDPOINT
-                secretName: aws-connection-documents
-                secretNameParameter:
-                  runtimeValue:
-                    constant: aws-connection-documents
+
+  platforms:
+    kubernetes:
+      deploymentSpec:
+        executors:
+          exec-add-chunks-to-milvus:
+            secretAsEnv:
+            - keyToEnv:
+              - envVar: MILVUS_HOST
+                secretKey: MILVUS_HOST
+              - envVar: MILVUS_PORT
+                secretKey: MILVUS_PORT
+              - envVar: MILVUS_USERNAME
+                secretKey: MILVUS_USERNAME
+              - envVar: MILVUS_PASSWORD
+                secretKey: MILVUS_PASSWORD
+              secretName: milvus-connection-documents
+              secretNameParameter:
+                runtimeValue:
+                  constant: milvus-connection-documents
+          exec-get-chunks-from-documents:
+            secretAsEnv:
+            - keyToEnv:
+              - envVar: AWS_ACCESS_KEY_ID
+                secretKey: AWS_ACCESS_KEY_ID
+              - envVar: AWS_SECRET_ACCESS_KEY
+                secretKey: AWS_SECRET_ACCESS_KEY
+              - envVar: AWS_DEFAULT_REGION
+                secretKey: AWS_DEFAULT_REGION
+              - envVar: AWS_S3_BUCKET
+                secretKey: AWS_S3_BUCKET
+              - envVar: AWS_S3_ENDPOINT
+                secretKey: AWS_S3_ENDPOINT
+              secretName: aws-connection-documents
+              secretNameParameter:
+                runtimeValue:
+                  constant: aws-connection-documents
