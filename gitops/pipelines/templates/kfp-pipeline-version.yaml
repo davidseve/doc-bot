@@ -7,12 +7,7 @@ spec:
   pipelineName: kfp-upsert-pl 
   displayName: kfp-upsert-pl-v1
   description: This is the first version of the pipeline.
-  pipelineSpec: 
-    # PIPELINE DEFINITION
-    # Name: load-documents-lc
-    # Inputs:
-    #    enable_caching: bool [Default: False]
-    #    model_name: str [Default: 'nomic-ai/nomic-embed-text-v1']
+  pipelineSpec:
     components:
       comp-add-chunks-to-milvus:
         executorLabel: exec-add-chunks-to-milvus
@@ -207,6 +202,7 @@ spec:
             parameterType: STRING
     schemaVersion: 2.1.0
     sdkVersion: kfp-2.13.0
+    ---
     platforms:
       kubernetes:
         deploymentSpec:
