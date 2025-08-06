@@ -98,6 +98,8 @@ spec:
         pipelinesApplication:
           name: "${DATA_SCIENCE_PROJECT_NAMESPACE}-pipelines"
           repoURL: "${REPO_URL}"
+          vcs:
+            uri: "${REPO_URL}"
         modelApplication:
           name: "${DATA_SCIENCE_PROJECT_NAMESPACE}-model"
           repoURL: "${MODEL_SERVING_REPO_URL:-https://github.com/alpha-hack-program/model-serving-utils.git}"
