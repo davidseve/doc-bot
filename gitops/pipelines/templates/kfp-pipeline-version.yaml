@@ -5,7 +5,6 @@ metadata:
   namespace: doc-bot
   labels:
     pipelines.kubeflow.org/pipeline: kfp-upsert-pl
-    pipelines.kubeflow.org/pipeline-id: d1706dca-06a2-461e-9a01-9d7118c57033
 spec:
   pipelineName: kfp-upsert-pl
   displayName: kfp-upsert-pl-v1
